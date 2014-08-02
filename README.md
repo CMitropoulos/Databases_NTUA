@@ -1,0 +1,1 @@
+user friendly hotel database management system using php for the server side programming and html combined with css for the layout and the visual design.

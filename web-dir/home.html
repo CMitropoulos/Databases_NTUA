@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NTUA DB Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="css.landing-page.css" />
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="login.html">Administrator Login</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://83.212.114.16/hom/home.html">Home</a>
+                    </li>
+                    <li><a href="logout.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+			<h1>National Technical University of Athens </h1>
+			<h2>Databases - 7th semester </h2>
+			<h3>Database created for the Neos-Astir-Vouliagmenis Hotel Group by George Chantzialexiou Christos Mitropoulos Omiros Pantazis</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            </li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=150292701&trk=nav_responsive_tab_profile" target="_blank"  class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">George Linkedin</span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=227098842&authType=name&authToken=ZVu3&trk=prof-connections-name" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Omiros Linkedin</span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=289536042&locale=en_US&trk=tyah&trkInfo=tarId%3A1399402218217%2Ctas%3Amitro%2Cidx%3A3-2-6" target="_blank"  class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Christos Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+
+    <div class="content-section-a">
+
+        <div class="container"  align="center">
+
+            <div  align="center">
+                    <hr class="ssection-heading-spacer">
+                    <div   class="clearfix"></div>
+			
+                    <h1  > Please choose one of the following actions: </h1>
+				<h3> Insert - Update - Delete a Record  </h3>
+				<form role='form' action="choice.php" method="post">
+				<div class="form-group">
+				<label for="Action" >Choose Action</label>
+				</div>
+				<select class="form-control" id="Action"  name="Action">
+				<option value="novalue">--</option>
+				<option value="Insert New Data">Insert New Data</option>
+				<option value="Update Data">Update Data</option>
+				<option value="Delete Data">Delete Data</option>
+				</select> <br>
+				<label for="Table" >Choose Table</label>
+				<select class="form-control"  name="table">
+				<option value="novalue">--</option>
+				<option value="Rooms">Rooms</option>
+				<option value="Reservation">Reservation</option>
+				<option value="Hotel">Hotel</option>
+				<option value="Customers">Customers</option>
+				<option value="Employees">Employees</option>
+				</select><br>
+					<br>
+				<button    type="submit" class="btn btn-danger btn-lg btn-block "> Go!</button>
+				</form>
+                
+		</div>
+ </br> </br> </br> </br>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+
+    <div class="content-section-c">
+
+        <div class="container">
+</br> </br> </br> </br>
+            <div class="row">
+                    <hr class="ssection-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading"> Useful operations: </h1>
+				<form role="form" Action="operations.php" method="post"> 
+				<div class="form-group">
+				<label for="Action">Choose an operation </label>
+				</div>
+				<select class="form-control" id="View" name="View">
+				<option value="novalue">--</option>
+				<option  value="Avalaible rooms">Avalaible rooms</option>
+				<option value="Total charge">Total charge</option>
+				</select><br>
+				<button    type="submit" class="btn btn-danger btn-lg btn-block "> Go!</button>
+				</form>
+                	
+		</div>
+</br> </br></br> </br>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+ <div class="content-section-b">
+
+        <div class="container">
+</br> </br> </br> </br>
+            <div class="row">
+                    <hr class="ssection-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading"> Avalaible views: </h1>
+                                <form role="form" Action="views.php" method="post">
+                                <div class="form-group">
+                                <label for="Action">Choose a view </label>
+                                </div>
+                                <select class="form-control" id="View" name="View">
+                                <option value="novalue">--</option>
+                                <option  value="Working now">Currently working on hotel Grand Resort Lagonisi (updatable)</option>
+                                <option value="Total charge">Total charge of all customers (non-updatable)</option>
+                                </select><br>
+                                <button    type="submit" class="btn btn-danger btn-lg btn-block "> Go!</button>
+                                </form>
+
+                </div>
+</br> </br></br> </br>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+
+
+
+    <div class="banner">
+
+        <div class="container" align='center'>
+
+                    <h2>Useful queries -  Choose one:</h2></br>
+	 <form action="queries-exec.php" method="post">
+	 <input type="radio" name="query" value="query1">Details of customers who have booked, along with the details of their reservation<br><br>
+	 <input type="radio" name="query" value="query2">Name and Surname of the staff and the name of the hotel they work for <br><br>
+	 <input type="radio" name="query" value="query3">The average salary of the staff members<br><br>
+	 <input type="radio" name="query" value="query4">Prices of the Rooms with descending order  <br><br>
+	 <input type="radio" name="query" value="query5">Number of customers who have booked grouped by the code of the hotel  <br><br>
+	 <input type="radio" name="query" value="query6">Select all employees whose salary is higher than the average wage of all employees<br><br>
+	 <input type="radio" name="query" value="query7">Number of customers who have booked grouped by the code of the hotel, and have made at least two reservations  <br><br>
+	<button    type="submit" class="btn btn-danger btn-lg btn-block "> See the query!</button>
+	</form>
+                </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+
+<br>
+<br>
+<p><strong>   </strong> </p>
+
+
+<!-- footer section of the theme -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="home.html">Home</a>
+                        </li>
+                       
+                        
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="mailto:georgeha98@gmail.com, o.pantazis@gmail.com, chris.mitropoulos@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Giorgos Chantzialexiou - Christos Mitropoulos - Omiros Pantazis. All Rights Reserved</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- end of footer section -->
+
+	<!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
